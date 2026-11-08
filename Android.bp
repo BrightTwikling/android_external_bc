@@ -85,6 +85,13 @@ cc_binary {
     vendor: true,
 }
 
+cc_binary {
+    name: "bc_recovery",
+    defaults: ["bc-defaults"],
+    stem: "bc",
+    recovery: true,
+}
+
 cc_binary_host {
     name: "gavinhoward-bc",
     defaults: ["bc-defaults"],
